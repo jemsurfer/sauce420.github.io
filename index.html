@@ -3,15 +3,29 @@
   <title>Sauce420's Github Website</title>
   <meta charset="utf-8" content="text/html">
   <style>
-  * {
-    background-color: black;
-  }
-  p {
-    color: white;
-  }
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    .lightmode {
+      background-color: #fff;
+      color: #000;
+    }
   </style>
+  <script>
+    function light_toggle() {
+      let element=document.body;
+      element.classList.toggle("lightmode");
+      document.cookie = "darkmode=0"
+    }
+  </script>
 </head>
 <body>
   <p>
-  This is just a website to test stuff
+    This is just a website to test stuff
   </p>
+  <button onclick="light_toggle()">
+    Toggle light mode (requires javascript)
+  </button>
+</body>
+</html>
