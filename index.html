@@ -12,19 +12,14 @@
       color: #000;
     }
   </style>
-  <script>
-    function light_toggle() {
-      let element=document.body;
-      element.classList.toggle("lightmode");
-    }
-  </script>
 </head>
 <body>
   <p>
     This is just a website to test stuff
   </p>
-  <button onclick="light_toggle()">
+  <button onclick="toggle(); theme_change();">
     Toggle light mode
   </button>
+  <script src="dark.js"></script>
 </body>
 </html>
