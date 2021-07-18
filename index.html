@@ -4,22 +4,47 @@
   <meta charset="utf-8" content="text/html">
   <style>
     body {
-      background-color: #000;
-      color: #fff;
+      background-color: black;
+      color: white;
     }
     .lightmode {
-      background-color: #fff;
-      color: #000;
+      background-color: white;
+      color: black;
+    }
+    button {
+      position: fixed;
+      right: 2.5%;
+      bottom: 2.5%;
+      border: 5px solid red;
+      border-radius: 25px;
+    }
+    .h:hover{
+      background-color: yellow;
+    }
+    a {
+      position: fixed;
+      right: 2.5%;
+      top: 2.5%;
+      border: 5px solid red;
+      border-radius: 25px;
+      background-color: white;
+    }
+    p {
+      width: 85%;
+      height: 85%;
     }
   </style>
 </head>
 <body>
   <p>
-    This is just a website to test stuff
+    Sauce420's github website
   </p>
-  <button onclick="toggle(); theme_change();">
-    Toggle light mode
+  <button onclick="toggle(); theme_change();" class="h">
+    Toggle light/dark mode
   </button>
+  <a href="https://github.com/sauce420/" class="h">
+    <img alt="github logo" src="gh_logo.png" width="50" height="50">
+  </a>
   <script src="dark.js"></script>
 </body>
 </html>
