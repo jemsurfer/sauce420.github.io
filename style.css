@@ -16,7 +16,7 @@ button {
 .h:hover{
   background-color: yellow;
 }
-a {
+#git {
   position: fixed;
   right: 2.5%;
   top: 2.5%;
